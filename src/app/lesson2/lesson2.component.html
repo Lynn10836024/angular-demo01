@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="score">
+<p *ngIf="score >=60"> 好棒 </p>
+<p *ngIf="score < 60"> 好笨 </p>
+
+{{bmiService.name}}
+<button (click)="callService()">ServiceCall</button>

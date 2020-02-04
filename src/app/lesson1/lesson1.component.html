@@ -1,0 +1,12 @@
+<!-- <input type ="number" [(ngModel)]="money">
+<p>us$:{{money * 30}}</p> -->
+
+tw$<input type="number" [(ngModel)]="twMoney" (ngModelChange)="twMoneyChange.emit($event)">
+<br>
+<div>us$:{{twMoney * 30 }}</div>
+<div>jp$:{{twMoney / 5}}</div>
+
+<button (click)="changeService()">change</button>
+<br>
+{{bmiService.name}}
+<button (click)="callService()">Service Call</button>
